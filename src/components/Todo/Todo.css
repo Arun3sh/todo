@@ -1,0 +1,17 @@
+.todo-container{
+    margin-top: -80px;
+}
+.task-input{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+}
+.text-field fieldset {
+	border: none;
+	outline: none;
+}
+.add-task-btn{
+    margin: 10px 10px !important;
+    border-radius: 25px !important;
+}
