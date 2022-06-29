@@ -1,0 +1,16 @@
+.todolist-container{
+    min-height: 50vh;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 3px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.todolist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.todo-item-active{
+    text-decoration: line-through;
+}
