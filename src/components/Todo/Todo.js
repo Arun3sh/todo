@@ -8,8 +8,8 @@ function Todo() {
   const [todo, setTodo] = useState("");
   const [todoList, setTodoList] = useState([]);
 
-  const addTask = () => {
-    console.log("addTask");
+  const handleSubmit = (event) => {
+    event.preventDefault();
     if (!todo) {
       console.log("here");
       return;
@@ -24,17 +24,19 @@ function Todo() {
   return (
     <div className="todo-container container-sm">
       <div className="todo-wrapper">
-        <div className="task-input">
+        <form className="task-input" onSubmit={handleSubmit}>
           <TextField
             className="text-field new-task"
             id="new-task"
             variant="outlined"
             fullWidth
+            value={todo}
+            onChange={(e) => setTodo(e.target.value)}
           />
-          <Button className="add-task-btn" variant="outlined" onClick={addTask}>
+          <Button className="add-task-btn" variant="outlined" type="submit">
             Add
           </Button>
-        </div>
+        </form>
 
         {/* Todo list */}
         <div>
