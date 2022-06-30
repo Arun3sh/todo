@@ -2,4 +2,12 @@
     height: 35vh;
     background-image:  linear-gradient(to right, rgba(54, 214, 62, 0.794), rgba(53, 201, 157, 0.794), rgba(32, 155, 212, 0.794)),url("../../assets/images/mountain.jpg");
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-bottom: 50px;
+    font-size: 26px;
+    color: white;
 }
