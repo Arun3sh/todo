@@ -33,7 +33,12 @@ function Todo() {
             value={todo}
             onChange={(e) => setTodo(e.target.value)}
           />
-          <Button className="add-task-btn" variant="outlined" type="submit">
+          <Button
+            className="add-task-btn"
+            title="add-task-btn"
+            variant="outlined"
+            type="submit"
+          >
             Add
           </Button>
         </form>
